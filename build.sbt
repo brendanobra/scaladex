@@ -3,6 +3,9 @@ import org.scalajs.sbtplugin.cross.CrossProject
 
 scalafmtConfig in ThisBuild := Some(file(".scalafmt"))
 
+enablePlugins(DockerPlugin)
+
+
 lazy val akkaVersion = "2.4.11"
 lazy val upickleVersion = "0.4.1"
 lazy val scalatagsVersion = "0.6.1"
